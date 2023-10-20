@@ -14,14 +14,20 @@
 # table = pd.read_html("https://www.w3schools.com/python/python_operators.asp")
 # table[0]
 
-a : int = 10
-b : int = 20
+# a : int = 10
+# b : int = 20
 
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
-print(a ** b)
-print(a // b)
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
+# print(a % b)
+# print(a ** b)
+# print(a // b)
 
+
+a : str = "abc"
+b : str = "abc"
+
+print(id(a))
+print(id(b))
