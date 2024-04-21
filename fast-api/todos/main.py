@@ -32,6 +32,13 @@ def getSingleTodo():
     print("Get  Single Todo is called")
     return "Get Single Todo is Called"
 
+@app.get("/gettodos/{userName}/{password}")
+def getTodos(userName, password):
+    print("username is",userName)
+    print("password is",password)
+    return userName + password
+
 
 def start():
     uvicorn.run("todos.main:app",host="127.0.0.1",port=7990, reload=True)
+
